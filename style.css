@@ -1,0 +1,111 @@
+body{
+    background: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em
+  }
+  
+  p{
+    color: lightgreen;
+     text-align: center;
+     font-size: 20px;
+  }
+  
+  a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    text-decoration: underline;
+  }
+  
+  a::after{
+    content: "";
+    background: white;
+      mix-blend-mode: exclusion;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+      transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  
+  a:hover::after{
+      height: calc(100% + 8px)
+  }
+  
+  /* The End */
+  
+  .note{
+    top: auto;
+    bottom: 0;
+    color: #ddd;
+    font-size: 13px;
+    text-transform: none;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+#logo{
+    height: 200px;
+}
+div {
+    /* This: */
+    margin: 20px;
+    /* Is the same as: */
+    margin-top:20px;
+    margin-right:20px;
+    margin-bottom:20px;
+    margin-left:20px;
+
+    /* This: */
+    padding: 10px 20px;
+    /* Is the same as: */
+    padding-top:10px;
+    padding-right:20px;
+    padding-bottom:10px;
+    padding-left:20px;
+    
+}
+
+h1 {
+    color: #111; font-family: 
+    'Helvetica Neue', sans-serif; 
+    font-size: 100px; 
+    font-weight:bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center; 
+    color: aqua;
+    
+}   
+
+h2 {
+    text-align: center;
+    font-size: 50px; 
+    color: #D22030;
+}
+
+ul {
+    text-align: center;
+    font-size: 20px; 
+    color: lightgreen; 
+}
+
+hr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color:white; /* old IE */
+    background-color: white; /* Modern Browsers */
+}
+
+.card-text{
+    color: black;
+}
